@@ -14,8 +14,8 @@ import { filtersReducer } from './filtersSlice';
 import { itemsReducer } from './itemsSlice';
 
 const rootReducer = combineReducers({
-  items: filtersReducer,
-  filter: itemsReducer,
+    filter: filtersReducer,
+    items: itemsReducer,
 });
 
 const persistConfig = {

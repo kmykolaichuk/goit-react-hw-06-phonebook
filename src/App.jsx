@@ -8,7 +8,6 @@ import { setStatusFilter } from './redux/filtersSlice';
 export default function App() {
   const dispatch = useDispatch();
   const filter = useSelector(state => state.filter);
-  console.log(filter);
 
   const onInputChange = evt => {
     dispatch(setStatusFilter(evt.currentTarget.value));
